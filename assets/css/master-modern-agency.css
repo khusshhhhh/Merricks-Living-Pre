@@ -5621,8 +5621,8 @@ section {
   visibility: visible;
 }
 
-.main-menu ul li a:hover {
-  color: #60941a;
+.header-area .main-menu > ul > li:hover > a {
+  scale: 1.1;
 }
 
 .main-menu li {
