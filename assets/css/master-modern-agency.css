@@ -8512,12 +8512,12 @@ section {
   line-height: 1;
 }
 .footer-area .social-links li a {
-  font-size: 17px;
+  font-size: 22px;
   color: var(--primary);
 }
 @media only screen and (max-width: 1199px) {
   .footer-area .social-links li a {
-    font-size: 14px;
+    font-size: 22px;
   }
 }
 .footer-area .social-links li a:hover {
