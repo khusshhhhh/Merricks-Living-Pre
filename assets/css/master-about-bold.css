@@ -7612,6 +7612,107 @@ section {
     gap: 30px 30px;
   }
 }
+
+/*FAQ*/
+
+.faq-area-inner {
+  display: grid;
+  gap: 30px 60px;
+  grid-template-columns: 1fr 740px;
+}
+@media only screen and (max-width: 1399px) {
+  .faq-area-inner {
+    grid-template-columns: 1fr 600px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .faq-area-inner {
+    grid-template-columns: 1fr 540px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faq-area-inner {
+    grid-template-columns: 1fr;
+  }
+}
+.faq-area .section-title {
+  max-width: 390px;
+}
+.faq-area .section-content .text {
+  max-width: 266px;
+}
+.faq-area .section-content .text-wrapper {
+  margin-top: 22px;
+}
+.faq-area .accordion .accordion-button {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--primary);
+  padding-top: 24px;
+  padding-bottom: 18px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  text-align: start;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1399px) {
+  .faq-area .accordion .accordion-button {
+    font-size: 22px;
+  }
+}
+.faq-area .accordion .accordion-button::after {
+  content: "+";
+  color: var(--primary);
+  background-image: none;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  font-size: 25px;
+  margin-inline-start: 50px;
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+}
+.faq-area .accordion .accordion-button:not(.collapsed) {
+  pointer-events: none;
+}
+.faq-area .accordion .accordion-button:not(.collapsed)::after {
+  content: "-";
+}
+.faq-area .accordion .accordion-item {
+  border-bottom: 1px solid #ececec;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}
+.dark .faq-area .accordion .accordion-item {
+  border-color: #252525;
+}
+.faq-area .accordion .accordion-item:not(:first-child) {
+  margin-top: 0px;
+}
+.faq-area .accordion .accordion-item:first-child {
+  border-top: 1px solid #ececec;
+}
+.dark .faq-area .accordion .accordion-item:first-child {
+  border-color: #252525;
+}
+.faq-area .accordion .accordion-body {
+  font-size: 18px;
+  line-height: 1.44;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  padding-bottom: 24px;
+  padding-top: 0;
+  color: var(--secondary);
+}
+@media only screen and (max-width: 991px) {
+  .faq-area .accordion .accordion-body {
+    padding-bottom: 23px;
+  }
+}
+
 .testimonial-area .testimonial-wrapper {
   max-width: 910px;
   margin: 0 auto;
